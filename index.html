@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Mencari Alamat Kode Pos</title>
+  </head>
+  <body>
+    <section class="images">
+      <img src="img/cenderawasih.png" class="layer laptop" />
+      <img src="img/Pikon.png" class="layer roket" />
+    </section>
+    <main>
+      <h1>Mencari Alamat Kode Pos</h1>
+      <section class="section-card">
+        <label for="provinsi">Provinsi</label>
+        <select
+          name="provinsi"
+          id="provinsi"
+          onchange="displayKabupaten()"
+        ></select>
+
+        <label for="kabupaten">Kabupaten</label>
+        <select
+          name="kabupaten"
+          id="kabupaten"
+          onchange="displayKecamatan()"
+        ></select>
+
+        <label for="kecamatan">Kecamatan</label>
+        <select
+          name="kecamatan"
+          id="kecamatan"
+          onchange="displayKelurahan()"
+        ></select>
+
+        <label for="kelurahan">Kelurahan</label>
+        <select
+          name="kelurahan"
+          id="kelurahan"
+          onchange="displayResult()"
+        ></select>
+      </section>
+
+      <section class="result">
+        <h3>Kode Pos :</h3>
+        <div id="result"></div>
+      </section>
+    </main>
+    <footer>copyright.@Beliau wanimbo</footer>
+  </body>
+  <script src="script.js"></script>
+</html>
